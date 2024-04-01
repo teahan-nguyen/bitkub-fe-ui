@@ -16,10 +16,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@ant-design/nextjs-registry": "^1.0.0",
+    "antd": "^5.16.0",
+    "clsx": "^2.1.0",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.51.2"
+    "react-hook-form": "^7.51.2",
+    "tw-merge": "^0.0.1-alpha.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
