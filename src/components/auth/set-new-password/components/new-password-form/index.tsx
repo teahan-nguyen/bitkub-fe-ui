@@ -15,7 +15,7 @@ type IsHiddenPasswordType = {
   confirmPassword: boolean;
 };
 
-export default function NewPasswordForm(props: INewPasswordFormProps) {
+export default function NewPasswordForm({}: INewPasswordFormProps) {
   const [isHiddenPassword, setIsHiddenPassword] =
     React.useState<IsHiddenPasswordType>({
       password: false,
@@ -27,7 +27,10 @@ export default function NewPasswordForm(props: INewPasswordFormProps) {
     console.log(e);
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="space-y-5"
+    >
       <div>
         <label htmlFor="">Password</label>
         <div className="w-full flex items-center py-2 px-4 mt-2 space-x-2 rounded-lg border-2 border-gray-300">

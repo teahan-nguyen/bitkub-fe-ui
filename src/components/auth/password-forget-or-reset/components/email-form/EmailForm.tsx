@@ -16,7 +16,10 @@ export default function EmailForm({ isForgetPasswordPage }: IEmailFormProps) {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-5"
+      >
         <div>
           <label htmlFor="">
             {isForgetPasswordPage ? "Email" : "Try another email"}

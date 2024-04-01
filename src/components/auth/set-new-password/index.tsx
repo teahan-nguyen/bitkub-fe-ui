@@ -3,7 +3,7 @@ import NewPasswordForm from "./components/new-password-form";
 
 export interface ISetNewPasswordProps {}
 
-export default function SetNewPassword(props: ISetNewPasswordProps) {
+export default function SetNewPassword({}: ISetNewPasswordProps) {
   return (
     <>
       <div className="w-[400px] flex-1 flex items-center">
