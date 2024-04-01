@@ -2,7 +2,7 @@ import * as React from "react";
 
 export interface IEyeIconProps {}
 
-export default function EyeIcon(props: IEyeIconProps) {
+export default function EyeIcon({}: IEyeIconProps) {
   return (
     <svg
       width="24"

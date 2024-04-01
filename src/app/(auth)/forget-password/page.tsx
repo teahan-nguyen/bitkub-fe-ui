@@ -3,6 +3,6 @@ import * as React from "react";
 
 export interface IForgetPasswordPageProps {}
 
-export default function ForgetPasswordPage(props: IForgetPasswordPageProps) {
+export default function ForgetPasswordPage({}: IForgetPasswordPageProps) {
   return <PasswordForgetOrReset isForgetPasswordPage={true} />;
 }

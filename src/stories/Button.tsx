@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 
 interface ButtonProps {
@@ -33,8 +34,8 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
-  return <button>button</button>;
+  // const mode = primary
+  //   ? "storybook-button--primary"
+  //   : "storybook-button--secondary";
+  return <button {...props}>button</button>;
 };
