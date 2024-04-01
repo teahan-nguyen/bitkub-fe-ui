@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        inputnormal: "0px 0px 0px 4px rgba(187, 222, 255, 0.50)",
+        inputerror: "0px 0px 0px 4px rgba(211, 32, 48, 0.10)",
+      },
       colors: {
         "blue-50": "#e9e9eb",
         "blue-100": "#bbbcc0",
