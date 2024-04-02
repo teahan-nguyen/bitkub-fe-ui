@@ -44,6 +44,7 @@ const config: Config = {
         "green-700": "#049948",
         "green-800": "#037638",
         "green-900": "#025a2b",
+        "green-active": "#02d767",
         "grey-50": "#e8e8e8",
         "grey-100": "#b6b7b9",
         "grey-200": "#939497",
