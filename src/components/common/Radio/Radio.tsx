@@ -1,58 +1,38 @@
 /* eslint-disable */
-import React, { useEffect, useState } from "react";
+import { Radio as RadioAntd, RadioChangeEvent } from "antd";
+import { Dispatch, SetStateAction } from "react";
+import "./radio.css";
 
 interface RadioProps {
   defaultChecked?: boolean;
   disabled?: boolean;
   label?: string;
+  name?: string;
   checked?: boolean;
-  value: string;
-  onChange?: () => void;
+  onChecked?: Dispatch<SetStateAction<boolean>>;
+  value?: string;
+  onChange?: (e: RadioChangeEvent) => void;
 }
 
 export const Radio = ({
   disabled = false,
+  name,
   defaultChecked = false,
   checked = false,
   label,
   value,
   onChange,
 }: RadioProps) => {
-  const [isChecked, setIsChecked] = useState<boolean>(
-    defaultChecked || checked,
-  );
-
-  useEffect(() => {
-    onChange && onChange();
-  }, [isChecked]);
-
-  const checkedClass = isChecked
-    ? `bg-green-500 ${disabled ? "bg-grey-50" : "hover:bg-green-700 cursor-pointer"}`
-    : `border border-grey-100 ${disabled ? "bg-grey-50" : "hover:border-grey-400 cursor-pointer"}`;
-
   return (
-    <div className="flex items-center gap-x-2">
-      <div
-        className={`${checkedClass} rounded-full w-4 h-4 flex justify-center items-center`}
-        onClick={() => disabled || setIsChecked((prev) => !prev)}
-      >
-        <input
-          type="radio"
-          name={label}
-          className="hidden"
-          value={value}
-          disabled={disabled}
-          checked={isChecked}
-          onChange={onChange}
-          readOnly
-        />
-        {isChecked && (
-          <div
-            className={`${disabled ? "bg-grey-100" : "bg-white"} w-2 h-2 rounded-full`}
-          ></div>
-        )}
-      </div>
+    <RadioAntd
+      value={value}
+      onChange={(e) => onChange?.(e)}
+      defaultChecked={defaultChecked}
+      name={name}
+      checked={checked}
+      disabled={disabled}
+    >
       {label}
-    </div>
+    </RadioAntd>
   );
 };

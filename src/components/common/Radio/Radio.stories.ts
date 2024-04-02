@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     value: "Radio",
-    checked: true,
+    checked: false,
     label: "Check",
   },
 };
