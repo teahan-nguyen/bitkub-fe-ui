@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 import { Button } from "./Button";
-import { EButtonType } from "/home/vmo/Workspace/nextjs/bitkub-fe-ui/src/enums/index";
+import { EButtonType } from "@/enums/index";
 
 const meta = {
-  title: "Example/Button",
+  title: "Components/Button",
   component: Button,
   parameters: {
     layout: "centered",

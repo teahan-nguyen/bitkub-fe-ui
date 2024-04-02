@@ -1,8 +1,5 @@
-import StarIcon from "./assets/svgs/Star";
-import {
-  EButtonType,
-  ESize,
-} from "/home/vmo/Workspace/nextjs/bitkub-fe-ui/src/enums/index";
+import StarIcon from "@/components/svgs/Star";
+import { EButtonType, ESize } from "@/enums/index";
 
 interface ButtonProps {
   variant?: "primary" | "secondary" | "warning" | "positive";
