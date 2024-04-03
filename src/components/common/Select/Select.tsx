@@ -13,6 +13,7 @@ import SVGInputClearWithHover from "@/components/svgs/SVGInputClearWithHover";
 import "./Select.css";
 
 interface SelectAntProps {
+  open?: boolean;
   size?: "small" | "middle" | "large";
   id?: string;
   labelRequired?: boolean;
@@ -42,6 +43,7 @@ const a = 10;
 console.log("aaa a", a);
 
 export default function Select({
+  open,
   size = "middle",
   options,
   name,
@@ -152,6 +154,7 @@ export default function Select({
             </div>
           )
         }
+        open={open}
         onDropdownVisibleChange={(open) => {
           const isOpenMenuAction = open === true;
           setIsOpen(isOpenMenuAction);
