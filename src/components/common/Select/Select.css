@@ -274,7 +274,7 @@
   align-items: center;
 }
 
-:where(.css-dev-only-do-not-override-11xg00t).ant-select-dropdown {
+.ant-select-dropdown {
   box-sizing: border-box;
   margin: 0;
   padding: 4px;
