@@ -10,10 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        inputnormal: "0px 0px 0px 4px rgba(187, 222, 255, 0.50)",
+        inputnormal: "0px 0px 0px 4px rgba(5, 215, 102, 0.20)",
         inputerror: "0px 0px 0px 4px rgba(211, 32, 48, 0.10)",
       },
       colors: {
+        black: {
+          2: "#404040",
+        },
         "blue-50": "#e9e9eb",
         "blue-100": "#bbbcc0",
         "blue-200": "#9b9ca1",
@@ -73,5 +76,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;

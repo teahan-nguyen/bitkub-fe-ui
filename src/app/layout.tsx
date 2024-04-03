@@ -14,7 +14,9 @@ const roboto = Roboto({
 const layout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${roboto.className}`}>
+      <body
+        className={`${roboto.variable} ${roboto.className} bg-white dark:bg-slate-800`}
+      >
         <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>

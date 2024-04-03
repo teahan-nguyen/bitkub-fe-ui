@@ -19,7 +19,7 @@ export default function SVGInputClearWithHover({
         className,
       )}
     >
-      <SVGInputClear className="fill-[#0000003f] group-hover:fill-[#00000072] " />
+      <SVGInputClear className="fill-[#0000003f] group-hover:fill-[#00000072] dark:fill-green-500 dark:group-hover:fill-green-400 " />
     </div>
   );
 }
