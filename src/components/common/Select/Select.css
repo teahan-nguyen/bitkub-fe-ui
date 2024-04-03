@@ -1,0 +1,311 @@
+:root {
+  --bg-select: #ffffff;
+  --color-default: #323338;
+  --bgcolor-default: #ffffff;
+  --select-dropdown-text-color: #323338;
+  --select-dropdown-bg-color: #ffffff;
+  --select-dropdown-bg-color-selected-item: #e6f4ff;
+  --select-color-selected: #404040;
+  --select-open-color: #rgba(0, 0, 0, 0.25);
+}
+
+.dark {
+  --bg-select: #000000;
+  --color-default: #ffffff;
+  --bgcolor-default: #1e293b;
+  --select-dropdown-text-color: #ffffff;
+  --select-dropdown-bg-color: #1a1a1a;
+  --select-dropdown-bg-color-selected-item: #111111;
+  --select-color-selected: #ffffff;
+  --select-open-color: #ffffff;
+}
+
+.ant-select-selector {
+  background: var(--bgcolor-default) !important;
+}
+
+.ant-select-single.ant-select-sm {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  height: 28px !important;
+}
+
+.ant-select-single {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  height: 40px !important;
+}
+
+.ant-select-single.ant-select-lg {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  height: 48px !important;
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-search {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 15px !important;
+  inset-inline-end: 25px !important;
+  bottom: 0;
+}
+
+.ant-select-multiple.ant-select-sm {
+  font-size: 13px !important;
+  line-height: 19px !important;
+  min-height: 28px !important;
+}
+
+.ant-select-multiple {
+  font-size: 13px !important;
+  line-height: 19px !important;
+  min-height: 40px !important;
+}
+
+.ant-select-multiple.ant-select-lg {
+  font-size: 13px !important;
+  line-height: 19px !important;
+  min-height: 48px !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  width: 100%;
+  height: 100%;
+  padding: 0 12px !important;
+}
+
+.ant-select-multiple.ant-select-sm:not(.ant-select-customize-input)
+  .ant-select-selector {
+  width: 100%;
+  min-height: 28px !important;
+  padding: 0 12px !important;
+}
+
+.ant-select-multiple:not(.ant-select-customize-input) .ant-select-selector {
+  width: 100%;
+  min-height: 40px !important;
+  padding: 6px 12px !important;
+}
+
+.ant-select-multiple.ant-select-lg:not(.ant-select-customize-input)
+  .ant-select-selector {
+  width: 100%;
+  min-height: 48px !important;
+  padding: 0 12px !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: 2px solid #b6b7b9 !important;
+}
+
+.ant-bitkub-select-error.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border: 2px solid #f09a9e !important;
+}
+
+.ant-select-single .ant-select-selector {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 0 0 50px !important;
+  color: var(--select-color-selected) !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 500 !important;
+  list-style: none !important;
+  font-family: inherit !important;
+  display: flex !important;
+  border-radius: 8px !important;
+  font-family: var(--font-roboto) !important;
+}
+
+.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+    .ant-pagination-size-changer
+  ):hover
+  .ant-select-selector {
+  border-color: #939497 !important;
+}
+
+.ant-bitkub-select-error.ant-select:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer):hover
+  .ant-select-selector {
+  border-color: #f09a9e !important;
+}
+
+.ant-select.ant-select-focused:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  border-color: #05d766 !important;
+}
+
+.ant-bitkub-select-error.ant-select.ant-select-focused:not(
+    .ant-select-disabled
+  ):not(.ant-select-customize-input):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  border-color: #f09a9e !important;
+}
+
+.ant-select-focused.ant-select:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  box-shadow: 0px 0px 0px 4px rgba(187, 222, 255, 0) !important;
+}
+
+.ant-bitkub-select-error.ant-select-focused.ant-select:not(
+    .ant-select-disabled
+  ):not(.ant-select-customize-input):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  box-shadow: 0px 0px 0px 4px rgba(211, 32, 48, 0.1) !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 200ms !important;
+}
+
+.ant-select .ant-select-selection-placeholder {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  pointer-events: none;
+  color: #b6b7b9 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-family: var(--font-roboto) !important;
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  padding: 3px 0px 1px 3px !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  transition:
+    all 0.3s,
+    visibility 0s;
+  align-self: center;
+}
+
+.ant-select-disabled.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  background: #f1f1f1 !important;
+}
+
+.ant-select-wrapper {
+  position: relative;
+}
+
+.ant-select-dropdown {
+  font-family: var(--font-roboto) !important;
+}
+
+.ant-select-dropdown .ant-select-item {
+  position: relative;
+  display: block;
+  min-height: 32px;
+  padding: 5px 12px;
+  color: var(--select-dropdown-text-color) !important;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px !important;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+}
+.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  background-color: #e6f4ff;
+}
+
+.ant-select-item-option-selected {
+  display: flex !important;
+}
+
+.ant-select-multiple .ant-select-selection-placeholder {
+  top: 53% !important;
+}
+
+.ant-select-outlined.ant-select-multiple .ant-select-selection-item {
+  background: #e6fbf0 !important;
+  border: 1px solid transparent;
+}
+
+.ant-select-selection-item-content {
+  color: #323338;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ant-select-sm .ant-select-selection-item-content {
+  color: #323338;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.ant-select-multiple
+  .ant-select-selection-overflow
+  .ant-select-selection-item-content {
+  display: inline-block;
+  margin-inline-end: 8px !important;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+
+.ant-select-multiple.ant-select-lg .ant-select-selection-item {
+  height: 32px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.ant-select-multiple.ant-select-sm .ant-select-selection-item {
+  height: 18px !important;
+  align-items: center;
+}
+
+:where(.css-dev-only-do-not-override-11xg00t).ant-select-dropdown {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4px;
+  color: var(--color-default);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  position: absolute;
+  top: -9999px;
+  z-index: 1050;
+  overflow: hidden;
+  font-variant: initial;
+  background-color: var(--bgcolor-default);
+  border-radius: 8px;
+  outline: none;
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  background-color: var(--select-dropdown-bg-color-selected-item) !important;
+}
+
+.ant-select-single.ant-select-open .ant-select-selection-item {
+  color: var(--select-open-color) !important;
+}

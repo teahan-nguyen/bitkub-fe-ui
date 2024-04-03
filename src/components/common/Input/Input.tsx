@@ -13,8 +13,8 @@ interface InputProps {
   variant?: any;
   inputSize?: any;
   placeholder: string;
-  error?: string | null | undefined;
-  label?: string | null | undefined;
+  error?: string;
+  label?: string;
   className?: string;
   inputClassName?: string;
   name: string;
@@ -32,8 +32,8 @@ interface InputProps {
 const Input = ({
   maxLength = Infinity,
   placeholder,
-  error,
-  label,
+  error = "",
+  label = "",
   className,
   inputClassName,
   name,
@@ -88,14 +88,14 @@ const Input = ({
 
   const borderClassName = useMemo(() => {
     if (computedError) {
-      return "border-[#F09A9E] focus:border-[#F09A9E] hover:border-[#F09A9E]";
+      return "border-red-500 focus:border-red-500 hover:border-red-500 focus:border-red-500";
     }
 
     if (disabled) {
       return "border-neutral-2-1 focus:border-neutral-2-1 hover:border-neutral-2-1";
     }
 
-    return "border-grey-100 focus:border-[#A5D3FF] hover:border-[#A5D3FF]";
+    return "border-grey-100 focus:border-[#A5D3FF] hover:border-grey-200 focus:border-green-500";
   }, [disabled, computedError]);
 
   const bgClassName = useMemo(() => {
@@ -146,9 +146,6 @@ const Input = ({
               disabled ? "text-neutral-1-9 " : "text-neutral-1-9",
               disabled && "cursor-not-allowed",
               inputClassName,
-              computedError
-                ? "focus:shadow-inputerror"
-                : "focus:shadow-inputnormal",
             )}
             placeholder={placeholder || ""}
             value={value || ""}
