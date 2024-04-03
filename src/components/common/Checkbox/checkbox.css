@@ -1,0 +1,56 @@
+.ant-checkbox-wrapper .ant-checkbox-inner {
+  border-color: #b6b7b9 !important;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox .ant-checkbox-inner {
+  border-color: #44454a !important;
+}
+
+.ant-checkbox {
+  border-color: #b6b7b9 !important;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: white !important;
+  background-color: #049948 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-color: white !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #05d766 !important;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-disabled .ant-checkbox-inner {
+  border-color: #b6b7b9 !important;
+}
+
+.ant-checkbox-wrapper:hover
+  .ant-checkbox-checked.ant-checkbox-disabled
+  .ant-checkbox-inner {
+  border-color: #b6b7b9 !important;
+  background-color: #e8e8e8 !important;
+}
+
+.ant-checkbox-wrapper
+  .ant-checkbox-checked.ant-checkbox-disabled
+  .ant-checkbox-inner {
+  border-color: #b6b7b9 !important;
+  background-color: #e8e8e8 !important;
+}
+
+/* Determinate */
+
+.ant-checkbox-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  width: 10px;
+  height: 1px;
+  background-color: white;
+}
+
+.ant-checkbox-wrapper
+  .ant-checkbox-indeterminate.ant-checkbox-disabled.ant-checkbox-checked
+  .ant-checkbox-inner::after {
+  background-color: #b6b7b9;
+}
