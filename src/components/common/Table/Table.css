@@ -1,0 +1,17 @@
+:root {
+  --borderColor: #d9d9d9;
+  --headerBg: #252733;
+  --colorTextHeading: #ffffff;
+  --colorBgContainer: #ffffff;
+  --colorText: #595959;
+  --rowHoverBg: #efefef;
+}
+
+.dark {
+  --borderColor: #d9d9d9;
+  --headerBg: #ffffff;
+  --colorTextHeading: #111111;
+  --colorBgContainer: #252733;
+  --colorText: #ffffff;
+  --rowHoverBg: #111111;
+}

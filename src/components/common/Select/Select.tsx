@@ -39,9 +39,6 @@ interface SelectAntProps {
   optionFilterProp?: string;
 }
 
-const a = 10;
-console.log("aaa a", a);
-
 export default function Select({
   open,
   size = "middle",
