@@ -10,3 +10,11 @@ export enum ESize {
   MEDIUM = "medium",
   LARGE = "large",
 }
+
+export enum EStatusBadge {
+  ON_QUEUE = "On queue",
+  CRAWLING = "Crawling",
+  ERROR = "Error",
+  ACTIVE = "Active",
+  INACTIVE = "Inactive",
+}
